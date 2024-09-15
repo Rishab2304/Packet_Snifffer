@@ -33,27 +33,27 @@ sudo python3 sniffer.py [arguments]
 
 - Basic Sniffing: Capture packets from the eth0 interface for 60 seconds.
 
-sudo python3 sniffer.py --interface eth0 --timeout 60
+  sudo python3 sniffer.py --interface eth0 --timeout 60
 
 
 - Filtering by IP Address: Capture packets from the eth0 interface where the source IP is 192.168.1.1.
 
-sudo python3 sniffer.py --interface eth0 --src_ip 192.168.1.1
+  sudo python3 sniffer.py --interface eth0 --src_ip 192.168.1.1
 
 
 - Saving to PCAP File: Capture packets from the eth0 interface and save them to capture.pcap.
 
-sudo python3 sniffer.py --interface eth0 --pcap capture.pcap
+  sudo python3 sniffer.py --interface eth0 --pcap capture.pcap
 
 
 - Using Promiscuous Mode: Capture all packets on the network segment from the eth0 interface and save to capture.pcap.
 
-sudo python3 sniffer.py --interface eth0 --promisc --pcap capture.pcap
+  sudo python3 sniffer.py --interface eth0 --promisc --pcap capture.pcap
 
 
 - Custom Filter Expression: Capture packets with a specific filter expression and save to capture.pcap.
 
-sudo python3 sniffer.py --interface eth0 --filter "tcp and port 80" --pcap capture.pcap
+  sudo python3 sniffer.py --interface eth0 --filter "tcp and port 80" --pcap capture.pcap
 
 ## Installation
 
